@@ -254,12 +254,51 @@ div#footer {
     border-top: solid 6px black;
     background-color: #303030;
     min-width: 100%;
-    height: 500px;
+    height: 400px;
 }
 
 div.foot_widget {
     overflow: auto;
     float: left;
     margin: 0 auto;
-    width: 20%;
+    width: 250px;
+    margin: 12px;
+    height: 250px;
+    overflow: hidden;
+    color: white;
+}
+
+div.foot_bottom {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    margin-top: 330px;
+}
+
+img.footer {
+    width: 150px;
+    display: inline-block;
+    margin-top: -5px;
+}
+
+#rss_wrap {
+    height: 250px;
+    overflow: hidden;
+}
+h2.footer_title {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+hr.footer_line {
+    border-color: RGBa (50, 50, 50, 0.5);
+    width: 100%;
+    margin-right: 10px;
+}
+
+p.footer_contact {
+    color: white;
+    display: inline;
+    margin-left: 300px;
 }
