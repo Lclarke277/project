@@ -22,62 +22,128 @@ div#header {
     margin-top: -10px;
 }
 
-ul {
+ul#nav {
     position: relative;
     display: block;
     list-style-type: none;
-    top: 20px;
+    top: 30px;
     margin-right: 10px;
     padding: 0;
     overflow: hidden;
     float: right;
+    font-family: 'Roboto', sans-serif;
 }
 
 li {
     float: left;
-    margin: 0 5px;
+    margin: 0 5px 0 0;
     border-right: solid 1px black;
 }
 
 li a {
+    margin: 0 10px;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 7px 15px;
     text-decoration: none;
     font-size: 12px;
 }
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-    background-color: #111;
     text-decoration: none;
+    color: blue;
 }
 
 .active {
-    background-color: orange;
-    border-radius: 10px;
+    background-color: RGBa(186, 101, 69, 0.9);
+    border-radius: 5px;
 }
 
 .mySlides {
-    max-height: 500px !important;
+    max-height: 600px !important;
     min-width: 100%;
     overflow: hidden;
     position: absolute;
     top: 0;
     z-index: -1000;
+    border-bottom: solid 6px black;
 }
 
 input[type=text] {
-    top: 20px;
-    width: 150px;
-    box-sizing: border-box;
-    border:none;
+    display: inline-block;
+    margin: 0 10px;
+    width: 170px;
+    border: none;
     border-radius: 25px;
-    font-size: 12px;
-    background-color: orange;
+    font-size: 14px;
+    background-color: RGBa(186, 101, 69, 0.9);
     background-image: url('img/search.png');
-    background-position: 7px 5px; 
+    background-position: 7px 6px; 
     background-repeat: no-repeat;
-    padding: 5px 0;
+    padding: 6px 0;
+}
+
+#sub_header {
+    width: 45%;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+h2.sub_header {
+    color: #BA6545;
+    font-weight: 700;
+}
+
+button.sub_header {
+    width: 160px;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #35BDF6;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 0px;
+    color: white;  
+}
+
+div#quad_div_wrap {
+    margin-top: 70px;
+    width: 1100px;
+    text-align: center;
+}
+
+div.quad_div {
+    display: inline-block;
+    width: 22.5%;
+    background-color: white;
+    margin: 0 10px;
+    padding: 15px 20px;
+}
+
+h3.quad_div {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+p.quad_div {
+    text-align: left;
+    font-weight: 100;
+    color: #8C8C8C;
+    font-size: 14px;
+}
+
+p.separator {
+    font-size: 8px;
+    color: #8C8C8C;
+    width: 100%;
+    overflow: hidden;
+}
+
+h4.quad_div {
+    font-size: 14px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
 }
