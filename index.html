@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Express</title>
+<link rel='stylesheet' type="text/css" href='stylesheet.css'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+</head>
+<body>
+ 
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<div id='slider'>
+  <div class="mySlides">
+    <img src='img/slider1.jpg' style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <img src="img/Ohio3.jpg" style="width:100%">
+  </div>
+</div>    
+    
+<div id='wrapper'>
+    
+<div id='header'>
+    <img id='logo-top' src="img/logo.png">
+    
+    <ul id='nav'>
+      <li><a class="active" href="#home">Home</a></li>
+      <li><a href="#news">About</a></li>
+      <li><a href="#contact">Portfolio</a></li>
+      <li><a href="#about">Blog</a></li>
+      <li><a href="#about">Archives</a></li>
+      <li><a href="#about">Contact</a></li>
+      <input type="text" name="search">
+    </ul>
+</div>
+
+
+  
+</div>
+
+<script>
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none"; 
+    }
+    slideIndex++;
+    if (slideIndex > x.length) {slideIndex = 1} 
+    x[slideIndex-1].style.display = "block"; 
+    setTimeout(carousel, 5000); 
+}
+</script>
+
+    
+</body>
+</html>
