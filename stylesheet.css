@@ -75,6 +75,10 @@ li a:hover {
     border-bottom: solid 6px black;
 }
 
+.slider_img {
+    min-width: 100%;
+}
+
 input[type=text] {
     display: inline-block;
     margin: 0 10px;
@@ -302,7 +306,10 @@ hr.footer_line {
 }
 
 p.footer_contact {
+    text-align: center;
     color: white;
-    display: inline;
-    margin-left: 300px;
+    display: inline-block;
+    float: right;
+    margin-right: 450px;
+    margin-top: 10px;
 }
