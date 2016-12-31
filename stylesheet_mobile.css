@@ -3,12 +3,8 @@ body, html {
     margin: 0;
 }
 
-.w3-content {
-    width: 1000px;
-}
-
 div#wrapper {
-    width: 1100px;
+    width: 700px;
     overflow: hidden;
     margin: 0 auto;
 }
@@ -19,18 +15,19 @@ div#header {
 
 #logo-top {
     max-width: 200px;
-    margin-top: -10px;
+    margin: 0 auto;
+    display: block;
 }
 
 ul#nav {
     position: relative;
     display: block;
     list-style-type: none;
-    top: 20px;
-    margin-right: 10px;
+    top: 0px;
+    left: 0px;
     padding: 0;
     overflow: hidden;
-    float: right;
+    float: left;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -66,8 +63,9 @@ li a:hover {
 }
 
 .mySlides {
+    min-height: 600px !important;
     max-height: 600px !important;
-    min-width: 100%;
+   /* min-width: 100%; */
     overflow: hidden;
     position: absolute;
     top: 0;
@@ -75,10 +73,15 @@ li a:hover {
     border-bottom: solid 6px black;
 }
 
+.slider_img {
+    min-height: 100%;
+}
+
 input[type=text] {
     display: inline-block;
     margin: 0 10px;
-    width: 170px;
+    margin-top: 0px;
+    width: 100px;
     border: none;
     border-radius: 25px;
     font-size: 14px;
@@ -92,7 +95,7 @@ input[type=text] {
 }
 
 #sub_header {
-    width: 45%;
+    width: 100%;
     padding: 20px;
     margin-top: 50px;
 }
@@ -115,13 +118,13 @@ button.sub_header {
 
 div#quad_div_wrap {
     margin-top: 70px;
-    width: 1100px;
+    width: 700px;
     text-align: center;
 }
 
 div.quad_div {
     display: inline-block;
-    width: 22.5%;
+    width: 40%;
     background-color: white;
     margin: 0 10px;
     padding: 15px 20px;
@@ -176,34 +179,37 @@ h3.recent_work {
 }
 
 .mySlides2 {
-    max-height: 600px !important;
     min-width: 100%;
     overflow: hidden;
-    position: relative;
     z-index: -1000;
 }
 
 p.recent_work_slide {
-    width: 250px;
+    width: 90%;
     font-size: 14px;
-    display: inline-block;
-    padding: 0;
-    margin-right: -30px;
+    display: block;
+    padding: 10;
 }
 
 div.work_grid {
-    width: 75%;
-    float: right;
+    width: 90%;
     top: 0;
 }
 
 div.img_wrap {
-    width: 230px;
-    min-height: 230px;
+    width: 680px;
+    min-height: 200px;
     overflow: hidden;
     background-size: cover;
-    float: left;
-    margin: 10px;
+    margin: 10 auto;
+}
+
+a.work_link {
+    margin: 10 auto;
+}
+
+div.row1, div.row2 {
+    display: block;
 }
 
 div.work1 {
@@ -258,14 +264,14 @@ div#footer {
     border-top: solid 6px black;
     background-color: #303030;
     min-width: 100%;
-    height: 400px;
+    height: 800px;
 }
 
 div.foot_widget {
     overflow: auto;
     float: left;
     margin: 0 auto;
-    width: 250px;
+    width: 320px;
     margin: 12px;
     height: 250px;
     overflow: hidden;
@@ -276,7 +282,7 @@ div.foot_bottom {
     height: 70px;
     width: 100%;
     background-color: black;
-    margin-top: 330px;
+    margin-top: 730px;
 }
 
 img.footer {
@@ -298,11 +304,11 @@ h2.footer_title {
 hr.footer_line {
     border-color: RGBa (50, 50, 50, 0.5);
     width: 100%;
-    margin-right: 10px;
+    margin-right: 20px;
 }
 
 p.footer_contact {
     color: white;
-    display: inline;
-    margin-left: 300px;
+    display: inline-block;
+    margin-left: 150px;
 }
